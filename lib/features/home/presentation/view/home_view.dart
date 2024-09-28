@@ -1,15 +1,18 @@
 import 'package:boocly/features/home/presentation/view/widgets/custom_appbar.dart';
-import 'package:boocly/features/home/presentation/view/widgets/custom_list_view_item.dart';
+import 'package:boocly/features/home/presentation/view/widgets/futured_list_view.dart';
 import 'package:flutter/material.dart';
 
-class homeView extends StatelessWidget {
-  const homeView({super.key});
+class HomeView extends StatelessWidget {
+  const HomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Column(
-        children: [CustomAppBar(), CustomListViewItem()],
+        children: [
+          CustomAppBar(),
+          FuturedListView(),
+        ],
       ),
     );
   }
