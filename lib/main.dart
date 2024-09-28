@@ -12,9 +12,10 @@ class Bookly extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(debugShowCheckedModeBanner: false,
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData().copyWith(scaffoldBackgroundColor: kPrimary),
+      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: kPrimary),
       home: const SplashView(),
     );
   }
