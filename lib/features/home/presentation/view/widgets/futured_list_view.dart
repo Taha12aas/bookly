@@ -1,4 +1,3 @@
-
 import 'package:boocly/features/home/presentation/view/widgets/custom_list_view_item.dart';
 import 'package:flutter/material.dart';
 
@@ -14,8 +13,11 @@ class FuturedListView extends StatelessWidget {
         itemCount: 10,
         itemBuilder: (context, index) {
           return const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 8),
-            child: CustomListViewItem(),
+            padding: EdgeInsets.only(right: 16),
+            child: CustomListViewItem(
+              height: .25,
+              width: .35,
+            ),
           );
         },
       ),
