@@ -16,6 +16,7 @@ class BestSallerListView extends StatelessWidget {
       },
       itemCount: 10,
       physics: const NeverScrollableScrollPhysics(),
+      // shrinkWrap: true,
     );
   }
 }

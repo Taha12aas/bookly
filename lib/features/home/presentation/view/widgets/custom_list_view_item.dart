@@ -1,8 +1,8 @@
 import 'package:boocly/core/utils/assets.dart';
 import 'package:flutter/material.dart';
 
-class CustomListViewItem extends StatelessWidget {
-  const CustomListViewItem(
+class ImageBook extends StatelessWidget {
+  const ImageBook(
       {super.key, required this.height, required this.width});
   final double height;
   final double width;

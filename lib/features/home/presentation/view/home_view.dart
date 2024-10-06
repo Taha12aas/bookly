@@ -1,6 +1,5 @@
 import 'package:boocly/core/utils/styules.dart';
 import 'package:boocly/features/home/presentation/view/widgets/best_saller_list_view.dart';
-import 'package:boocly/features/home/presentation/view/widgets/book_rating.dart';
 import 'package:boocly/features/home/presentation/view/widgets/custom_appbar.dart';
 import 'package:boocly/features/home/presentation/view/widgets/futured_list_view.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +9,7 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Padding(
         padding: EdgeInsets.only(
           left: 18,
@@ -34,7 +33,10 @@ class HomeView extends StatelessWidget {
                 ),
               ],
             ),
-          ),SliverFillRemaining(child: BestSallerListView(),)
+          ),
+          SliverFillRemaining(
+            child: BestSallerListView(),
+          )
         ]),
       ),
     );

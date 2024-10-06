@@ -14,7 +14,7 @@ class FuturedListView extends StatelessWidget {
         itemBuilder: (context, index) {
           return const Padding(
             padding: EdgeInsets.only(right: 16),
-            child: CustomListViewItem(
+            child: ImageBook(
               height: .25,
               width: .35,
             ),
