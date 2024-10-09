@@ -1,5 +1,6 @@
 import 'package:boocly/core/utils/styules.dart';
 import 'package:boocly/features/home/presentation/view/widgets/custom_app_bar_book_description.dart';
+import 'package:boocly/features/home/presentation/view/widgets/custom_button.dart';
 import 'package:boocly/features/home/presentation/view/widgets/custom_list_view_item.dart';
 import 'package:boocly/features/home/presentation/view/widgets/rating.dart';
 import 'package:flutter/material.dart';
@@ -35,7 +36,37 @@ class BookDescriptionBody extends StatelessWidget {
           SizedBox(
             height: 14,
           ),
-          Rating()
+          Rating(),
+          SizedBox(
+            height: 37,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 38),
+            child: Row(
+              children: [
+                Expanded(
+                  child: CustimButton(
+                    text: '19.99€',
+                    textColor: Colors.black,
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(16),
+                        topLeft: Radius.circular(16)),
+                  ),
+                ),
+                Expanded(
+                  child: CustimButton(
+                    text: 'Free preview',
+                    textColor: Colors.white,
+                    color: Color(0xffEF8262),
+                    borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(16),
+                        bottomRight: Radius.circular(16)),
+                  ),
+                ),
+              ],
+            ),
+          )
         ],
       )),
     );
